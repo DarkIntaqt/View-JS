@@ -20,4 +20,4 @@ Just put the attribute "mobile" or "desktop" in a style or link tag and use this
 <p><strong>Version 1.1</strong>: Removed an error on console</p>
 <p><strong>Version 1.0</strong>: First offical Release</p>
 <h2>Devblog</h2>
-<a href="https://darkintaqt.com/blog/view-js/">darkintaqt.com</a>
+Visit <a href="https://darkintaqt.com/blog/view-js/">darkintaqt.com</a> for more help. 

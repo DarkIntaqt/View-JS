@@ -1,4 +1,4 @@
-# view-js
+# View-JS
 Change your Websitestyle with this simple code.  
 
 

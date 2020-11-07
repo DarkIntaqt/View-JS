@@ -5,7 +5,8 @@ Change your Websitestyle with this simple code.
 <h2>How to use?</h2>
 Its quite simple. 
 Just put the attribute "mobile" or "desktop" in a style or link tag and use this script in your <code>&lt;head&gt;</code>: <br>
-<code>&lt;script src="https://darkintaqt.com/projects/view-js/view.js"&gt;&lt;/script&gt;</code> or this 
+<code>&lt;script src="https://darkintaqt.com/projects/view-js/view.js"&gt;&lt;/script&gt;</code> 
+<br>or this <br>
 <code>&lt;script src="https://raw.githubusercontent.com/DarkIntaqt/view-js/main/view.js"&gt;&lt;/script&gt;</code>
 
 <h4>Example</h4>

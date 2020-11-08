@@ -6,6 +6,8 @@ Change your Websitestyle with this simple code.
 Its quite simple. 
 Just put the attribute "mobile" or "desktop" in a style or link tag and use this script in your <code>&lt;head&gt;</code>: <br>
 <code>&lt;script src="https://darkintaqt.com/projects/view-js/view.js"&gt;&lt;/script&gt;</code> 
+<br>or this code</br>
+<code>&lt;script src="https://darkintaqt.com/l/vjs/"&gt;&lt;/script&gt;</code>
 
 <h4>Example</h4>
 <code>&lt;link rel="stylesheet" href="yourlinkto.css" desktop&gt;</code> <- This css appears only on a desktop<br>
@@ -20,4 +22,5 @@ Just put the attribute "mobile" or "desktop" in a style or link tag and use this
 <p><strong>Version 1.1</strong>: Removed an error on console</p>
 <p><strong>Version 1.0</strong>: First offical Release</p>
 <h2>Devblog</h2>
+View-JS will update itself, if you don't want any changes you will need to download the script and use the downloaded version.
 Visit <a href="https://darkintaqt.com/blog/view-js/">darkintaqt.com</a> for more help. 

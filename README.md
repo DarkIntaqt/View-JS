@@ -19,6 +19,7 @@ Just put the attribute "mobile" or "desktop" in a style or link tag and use this
 <code>&lt;link rel="stylesheet" href="yourlinkto.css"&gt;</code>.        <- This css appears on every device
 <br><code>&lt;style&gt;your css here&lt;/style&gt;</code>                <- This css appears on every device
 <h2>Changelog?</h2>
+<p><strong>Version 1.2</strong>: Removed Transition</p>
 <p><strong>Version 1.1</strong>: Removed an error on console</p>
 <p><strong>Version 1.0</strong>: First offical Release</p>
 <h2>Devblog</h2>

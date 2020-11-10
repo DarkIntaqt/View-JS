@@ -18,6 +18,10 @@ Just put the attribute "mobile" or "desktop" in a style or link tag and use this
 <br><br>
 <code>&lt;link rel="stylesheet" href="yourlinkto.css"&gt;</code>.        <- This css appears on every device
 <br><code>&lt;style&gt;your css here&lt;/style&gt;</code>                <- This css appears on every device
+
+<h4>Avoid SEO Issues</h4>
+To avoid SEO Issues, put mobile/desktop in the class attribute. <br>
+<code>&lt;style <strong>class="desktop"</strong>&gt;your css here&lt;/style&gt;</code>  
 <h2>Changelog</h2>
 <p><strong>Version 1.3</strong>: The mobile attribut can now be placed into a class attribute to avoid SEO Issues</p>
 <p><strong>Version 1.2</strong>: Removed Transition</p>

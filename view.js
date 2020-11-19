@@ -37,7 +37,7 @@ function viewjsCheckfunc() {
 
 
 function viewjsloadingtime() {
-  if (viewjsstylecount == true) {
+  if (viewjsstylecount === true) {
     return;
   }
   setTimeout(function() {

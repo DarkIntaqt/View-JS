@@ -23,6 +23,7 @@ Just put the attribute "mobile" or "desktop" in a style or link tag and use this
 To avoid SEO Issues, put mobile/desktop in the class attribute. <br>
 <code>&lt;style <strong>class="desktop"</strong>&gt;your css here&lt;/style&gt;</code>  
 <h2>Changelog</h2>
+<p><strong>Version 2.0</strong>: Fixed an error with animations of disabled Stylesheets</p>
 <p><strong>Version 1.5</strong>: Fixed an error which was triggered using bigger stylesheets. View-JS now Update your page imediatly after every stylesheet loading</p>
 <p><strong>Version 1.3(.1)</strong>: The mobile attribut can now be placed into a class attribute to avoid SEO Issues</p>
 <p><strong>Version 1.2</strong>: Removed Transition</p>

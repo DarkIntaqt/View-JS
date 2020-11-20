@@ -1,6 +1,12 @@
 /* DarkIntaqt - Version 2.0 (2020-11-19) */
 var viewjsvisum = 'desktop',
-  viewjsnumerarauno, viewjsnumeraraduo, viewjsdbr, viewjsdbcssr, viewjslinteum, style, viewjsstylecount = false;
+    viewjsnumerarauno, 
+     viewjsnumeraraduo, 
+    viewjsdbr, 
+    viewjsdbcssr, 
+    viewjslinteum, 
+    style, 
+    viewjsstylecount = false;
 window.onload = function() {
   viewjsstylecount = true;
 };

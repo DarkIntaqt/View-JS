@@ -1,6 +1,5 @@
 /* DarkIntaqt - Version 2.0 (2020-11-21) */
 
-// Declaring all the Variables
 
 var viewjsvisum = 'desktop',
     viewjsnumerarauno,
@@ -9,7 +8,7 @@ var viewjsvisum = 'desktop',
     viewjsdbcssr,
     viewjslinteum,
     style,
-    viewjsstylecount = false;
+    viewjsstylecount = false; // Declaring all the Variables
 
 
 // Disable refreshing

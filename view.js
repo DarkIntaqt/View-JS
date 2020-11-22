@@ -3,12 +3,12 @@
 // Declaring all the Variables
 
 var viewjsvisum = 'desktop',
-    viewjsnumerarauno, 
-    viewjsnumeraraduo, 
-    viewjsdbr, 
-    viewjsdbcssr, 
-    viewjslinteum, 
-    style, 
+    viewjsnumerarauno,
+    viewjsnumeraraduo,
+    viewjsdbr,
+    viewjsdbcssr,
+    viewjslinteum,
+    style,
     viewjsstylecount = false;
 
 
@@ -28,8 +28,8 @@ function viewjsCheckfunc() {
   for (viewjsnumerarauno = 0; viewjsnumerarauno < document.styleSheets.length; viewjsnumerarauno++) /* For all Stylesheets */ {
     viewjslinteum = document.styleSheets[viewjsnumerarauno]; /* Set the current Stylesheet into a Variable */
     for (viewjsnumeraraduo = 0; viewjsnumeraraduo < viewjslinteum['ownerNode']['attributes'].length; viewjsnumeraraduo++) /* For every Attribute in the current Stylesheet  (e.g. mobile / desktop) */ {
-      if (viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'] == 'mobile' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'] == 'desktop' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['localName'] == 'mobile' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['localName'] == 'desktop') /* Check for the mobile or desktop attribute */ {
-        if (viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'] !== viewjsvisum) /* Foreach Sheet where the Attribut is not the UserAgent (IF stylesheet.attribbut IS NOT UserAgent [MOBILE / DESKTOP]) */ {
+      if (viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'].toLowerCase() == 'mobile' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'].toLowerCase() == 'desktop' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['localName'].toLowerCase() == 'mobile' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['localName'].toLowerCase() == 'desktop') /* Check for the mobile or desktop attribute */ {
+        if (viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'].toLowerCase() !== viewjsvisum) /* Foreach Sheet where the Attribut is not the UserAgent (IF stylesheet.attribbut IS NOT UserAgent [MOBILE / DESKTOP]) */ {
           void(document.styleSheets.item(viewjsnumerarauno).disabled = true); /* Set Disabled to TRUE */
         }
       }

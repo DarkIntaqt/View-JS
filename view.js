@@ -1,4 +1,4 @@
-/* DarkIntaqt - Version 2.0 (2020-11-22) */
+/* DarkIntaqt - Version 2.0 (2020-11-24) */
 
 
 var viewjsvisum = 'desktop',

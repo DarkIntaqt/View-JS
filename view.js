@@ -1,4 +1,4 @@
-/* DarkIntaqt - Version 2.0 (2020-11-24) */
+/* DarkIntaqt - Version 2.1 (2020-11-27) */
 
 
 var viewjsvisum = 'desktop',
@@ -7,16 +7,17 @@ var viewjsvisum = 'desktop',
     viewjsdbr,
     viewjsdbcssr,
     viewjslinteum,
-    style,
+    viewjsstyle,
     viewjsstylecount = false; // Declaring all the Variables
 
 
 // Disable refreshing
 
-window.onload = function() {
+window.addEventListener("load",function() {
   viewjsstylecount = true;
-};
+}, false);
 
+// If the window is "loaded", we stop running our scripts
 
 // Function check that Check UserAgent
 
@@ -29,7 +30,7 @@ function viewjsCheckfunc() {
     for (viewjsnumeraraduo = 0; viewjsnumeraraduo < viewjslinteum['ownerNode']['attributes'].length; viewjsnumeraraduo++) /* For every Attribute in the current Stylesheet  (e.g. mobile / desktop) */ {
       if (viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'].toLowerCase() == 'mobile' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'].toLowerCase() == 'desktop' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['localName'].toLowerCase() == 'mobile' || viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['localName'].toLowerCase() == 'desktop') /* Check for the mobile or desktop attribute */ {
         if (viewjslinteum['ownerNode']['attributes'][viewjsnumeraraduo]['nodeValue'].toLowerCase() !== viewjsvisum) /* Foreach Sheet where the Attribut is not the UserAgent (IF stylesheet.attribbut IS NOT UserAgent [MOBILE / DESKTOP]) */ {
-          void(document.styleSheets.item(viewjsnumerarauno).disabled = true); /* Set Disabled to TRUE */
+          void (document.styleSheets.item(viewjsnumerarauno).disabled = true); /* Set Disabled to TRUE */
         }
       }
     }
@@ -39,18 +40,19 @@ function viewjsCheckfunc() {
 
 
 
-function viewjsloadingtime() /* This function triggers every 2 ms until the Website is loaded */ {
-  if (viewjsstylecount === true) {
-    return; // Stop the function if Website is loaded (viewjsstylecount = true)
-  }
-  setTimeout(function() /* Create a transition */ {
-    viewjsCheckfunc(); // Start the Search function
-    style = document.createElement("style"); // Create an temporary object
-    style.innerHTML = "*,:before,:after{transition-property:none!important;animation:none!important;}"; // Put this complicated stylesheet code into the Website to disable transition of the disabled Sheets
-    document.head.appendChild(style); // Set the Created obejct into the <head>
-    setTimeout(function() {
-      style.parentNode.removeChild(style); // After 1 ms delete the temporary object
-    }, 1);
-  }, 2);
+function viewjsloadingtime() /* This function triggers every 2 ms until the Website is loaded */ { 
+   if (viewjsstylecount === true) {
+      return; // Stop the function if Website is loaded (viewjsstylecount = true)
+   }
+   setTimeout(function() /* Create a transition */ {
+      viewjsCheckfunc() // Start the Search function
+   }, 3); // Set transition to 3 MS
+   viewjsstyle = document.createElement("style"); // Create an temporary object
+   viewjsstyle.innerHTML = "*,:before,:after{transition-property:none!important;animation:none!important;}"; // Put this complicated stylesheet code into the Website to disable transition of the disabled Sheets
+   document.head.appendChild(viewjsstyle); // Set the Created obejct into the <head>
+   viewjsstyle.setAttribute("id", "viewjspurge"); // Added a specialattribute to temporary object
+   setTimeout(function() {
+      document.getElementById("viewjspurge").remove(); // Delete Styleelement
+   }, 1);
 }
-viewjsCheckfunc(); // Start the Search Function
+viewjsCheckfunc(); // Start the script

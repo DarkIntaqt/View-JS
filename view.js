@@ -46,7 +46,7 @@ function viewjsloadingtime() /* This function triggers every 2 ms until the Webs
    }
    setTimeout(function() /* Create a transition */ {
       viewjsCheckfunc() // Start the Search function
-   }, 3); // Set transition to 3 MS
+   }, 2); // Set transition to 3 MS
    viewjsstyle = document.createElement("style"); // Create an temporary object
    viewjsstyle.innerHTML = "*,:before,:after{transition-property:none!important;animation:none!important;}"; // Put this complicated stylesheet code into the Website to disable transition of the disabled Sheets
    document.head.appendChild(viewjsstyle); // Set the Created obejct into the <head>
